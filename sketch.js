@@ -3,10 +3,16 @@ let speed = 3;
 
 function setup() {
   createCanvas(400, 400);
+  
 }
 
 function draw() {
   background(125);
+
+  textSize(30)
+  text("TIME", 160, 20)
+ 
+rectMode(CORNER)
 
   //Size of circle changes with the horizontal mouse position
   let d = map(mouseX, 0, width, 50, 150, true);
@@ -17,6 +23,23 @@ function draw() {
     speed = 0
   }
   y = y + speed;
+
+  // rotating rectangle
+  push();
+  translate(200,400);
+  rotate( radians(frameCount) );
+  rect(0, 0, 160, 20);
+  pop();
+
+  //rotating text
+  push();
+  translate(200,400);
+  rotate( radians(frameCount) );
+  text("TIME", 160, 20)
+  pop();
+
+  console.log (d)
+
 
 
 
