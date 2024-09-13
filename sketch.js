@@ -7,12 +7,13 @@ function setup() {
 }
 
 function draw() {
-  background(125);
+  background(137,207,240);
 
   textSize(30)
-  text("TIME", 160, 20)
+  text("Tick Tock!", 145, 70)
+
  
-rectMode(CORNER)
+  rectMode(CORNER)
 
   //Size of circle changes with the horizontal mouse position
   let d = map(mouseX, 0, width, 50, 150, true);
