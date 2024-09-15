@@ -29,14 +29,14 @@ function draw() {
   push();
   translate(200,400);
   rotate( radians(frameCount) );
-  rect(0, 0, 160, 20);
+  rect(0, 0, 180, 20);
   pop();
 
   //rotating text
   push();
   translate(200,400);
   rotate( radians(frameCount) );
-  text("TIME", 160, 20)
+  text("TIME", 200, 20)
   pop();
 
   console.log (d)
